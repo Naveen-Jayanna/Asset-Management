@@ -1,0 +1,13 @@
+1. run .net code and ente the credentials for login
+	id 	 : Admin@Hotel.com
+	password : Admin
+
+2. the folder in which the python script resides must contain the image which has been taken for processing and should be stored with a name "image.jpg"
+
+3. run the python script 
+
+4. after entering the details(customer details) in the browser (frontend) and when the final page i.e billing is reached the room number which has to be billed is entered.
+
+5. After a few moments the bill and the items which are missing are fetched and displayed.
+
+6. after the final payment once "Bill" button is pressed which in turn flushes the data from the cloud.
