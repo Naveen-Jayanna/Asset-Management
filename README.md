@@ -58,10 +58,9 @@ The majority of computer and robot vision systems depend heavily on the capacity
 The virtual concierge functions as a kind of personal assistant for clients. Visitors can use this digital service before they arrive at the resort or while they are there to learn more about what the hotel has to offer, take 360-degree video tours, find nearby attractions and events, and learn about options for upgrades or additional packages to buy. This is where targeted upsell promotions that are rich in important information that will be helpful to travelers and can considerably improve their stay are located, as opposed to the website home page. The virtual concierge may be a piece of the website connected to the hotel PMS software through the hotel app, which is the best part of this situation. This would enable the construction of a special digital gateway for two-way communication between the hotel and its clients, as well as even more individualized service.
 
 # Reference
-- Forrest N. et al, SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size  https://arxiv.org/abs/1602.07360  
-- Kaiming H. et al, Deep Residual Learning for Image Recognition https://arxiv.org/abs/1512.03385 
-- Bradski, Gary; Kaehler, Adrian (2008). Learning OpenCV: Computer vision with the OpenCV library. O'Reilly Media, Inc. p. 6.
-- Pulli, Kari; Baksheev, Anatoly; Kornyakov, Kirill; Eruhimov, Victor (1 April 2012). "Realtime Computer Vision with OpenCV". https://dl.acm.org/doi/10.1145/2181796.2206309 
-- ImageNet Classification with Deep ConvolutionalNeural Networks Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neuralnetworks.pdf
+- "SqueezeNet: AlexNet-level accuracy with 50x fewer parameters and <0.5MB model size", Forrest N. Iandola, Song Han, Matthew W. Moskewicz, Khalid Ashraf, William J. Dally, Kurt Keutzer, https://arxiv.org/abs/1602.07360  
+- "Deep Residual Learning for Image Recognition", Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun, https://arxiv.org/abs/1512.03385
+- "Realtime Computer Vision with OpenCV", Kari Pulli, Anatoly Baksheev, Kirill Kornyakov, Victor Eruhimov  https://dl.acm.org/doi/10.1145/2181796.2206309 
+- "ImageNet Classification with Deep ConvolutionalNeural Networks", Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neuralnetworks.pdf
 
 
