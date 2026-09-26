@@ -4,10 +4,10 @@
     import time
     while True :
         mydb = mysql.connector.connect(
-          host="**.**.**.**",
-          user="user",
-          passwd="",
-          database="digitalimage"
+          host=os.environ["ASSET_DB_HOST"],
+          user=os.environ["ASSET_DB_USER"],
+          passwd=os.environ["ASSET_DB_PASSWORD"],
+          database=os.environ["ASSET_DB_NAME"]
         )
 
         mycursor = mydb.cursor()
@@ -16,10 +16,10 @@
         tbl= mycursor.fetchall()
         while tbl[0][1] is 1:
             mydb = mysql.connector.connect(
-              host="**.**.**.**",
-              user="user",
-              passwd="",
-              database="digitalimage"
+              host=os.environ["ASSET_DB_HOST"],
+              user=os.environ["ASSET_DB_USER"],
+              passwd=os.environ["ASSET_DB_PASSWORD"],
+              database=os.environ["ASSET_DB_NAME"]
             )
             mycursor = mydb.cursor()
             sql = 'select * from Semaphore'
@@ -55,10 +55,10 @@
 
 
         mydb1 = mysql.connector.connect(
-              host="**.**.**.**",
-              user="user",
-              passwd="",
-              database="digitalimage"
+              host=os.environ["ASSET_DB_HOST"],
+              user=os.environ["ASSET_DB_USER"],
+              passwd=os.environ["ASSET_DB_PASSWORD"],
+              database=os.environ["ASSET_DB_NAME"]
             )
         mycursor1 = mydb1.cursor()
         sql1='update Semaphore set test=1'

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,13 +10,18 @@ namespace DIP
 {
     public class MysqlConnector
     {
-        string cs = "server=18.225.27.58;database=digitalimage;user id=user;password=digitalimage";
+        private readonly string cs = Environment.GetEnvironmentVariable("ASSET_MANAGEMENT_DB_CONNECTION_STRING");
         MySqlConnection con = null;
         MySqlCommand cmd = null;
         MySqlDataAdapter adp = null;
 
         public MysqlConnector()
         {
+            if (string.IsNullOrWhiteSpace(cs))
+            {
+                throw new InvalidOperationException("Set ASSET_MANAGEMENT_DB_CONNECTION_STRING before starting the application.");
+            }
+
             con = new MySqlConnection(cs);
             con.Open();
             cmd = new MySqlCommand();

@@ -30,14 +30,29 @@ The web project also contains older hotel-management pages that were reused as p
 - ASP.NET Web Forms
 - C#
 
+## Local database configuration
+
+The Python worker reads its MySQL settings from these environment variables:
+
+```text
+ASSET_DB_HOST
+ASSET_DB_USER
+ASSET_DB_PASSWORD
+ASSET_DB_NAME
+```
+
+The C# MySQL connector reads a complete connection string from `ASSET_MANAGEMENT_DB_CONNECTION_STRING`.
+
+For the legacy SQL Server pages, copy `frontend/DIP/ConnectionStrings.example.config` to `frontend/DIP/ConnectionStrings.config` and replace the placeholder values locally. The local file is ignored by Git.
+
 ## Project status
 
 This code is not production ready. It targets an older software stack and currently requires cleanup before it can be run safely.
 
 Important work still needed:
 
-- Remove all database credentials from source code and rotate the exposed credentials
-- Move configuration to environment variables or ignored local settings
+- Rotate the previously exposed database credentials and purge them from Git history
+- Validate the environment-variable and local configuration workflow
 - Replace the incomplete Python worker with a reproducible command-line entry point
 - Add the database schema and seed data
 - Separate the asset-detection interface from unrelated hotel pages
